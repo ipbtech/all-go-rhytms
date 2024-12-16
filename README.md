@@ -1,2 +1,2 @@
 # all-go-rhytms
-no pain no gain
+twitching the popular algorithms on xUnit framework
