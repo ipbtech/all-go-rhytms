@@ -62,7 +62,7 @@
             // Act
             int start = 0;
             int end = size - 1;
-            while (end < inputArray.Length -1 && inputArray[end + 1] <= searchValue)
+            while (end < inputArray.Length - 1 && inputArray[end + 1] <= searchValue)
             {
                 start = start + size;
                 end = (end + size) > inputArray.Length - 1 ? inputArray.Length - 1 : end + size;
