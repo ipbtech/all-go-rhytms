@@ -3,7 +3,7 @@
     public class SelectionSorting
     {
         [Theory]
-        [InlineData(new int[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55 })]
+        [InlineData(new int[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
         public void SelectionSortEscending(params int[] array)
         {
             //Arrange
@@ -33,7 +33,7 @@
 
 
         [Theory]
-        [InlineData(new int[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55 })]
+        [InlineData(new int[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
         public void SelectionSortDescending(params int[] array)
         {
             //Arrange
