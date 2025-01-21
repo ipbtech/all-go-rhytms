@@ -1,15 +1,15 @@
 # all-go-rhytms
-Analysis of the popular algorithms with xUnit tests and benchmarks for fun.
-Impements algorithms:
-1. Searching
+Analysis of the popular algorithms with tests (xUnit) and benchmarks (BenchmarkDotNet) for fun.
+## Impements algorithms:
+### Searching
   - Linear
   - Binary
   - Jumping 
-2. Sorting
+### Sorting
   - Bubble
   - Selection
   - Insertion
   - Counting
   - Radix
-3. Other
+### Other
   - Shuffling 
