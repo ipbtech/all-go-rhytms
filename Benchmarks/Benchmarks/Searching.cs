@@ -4,7 +4,7 @@ using BenchmarkDotNet.Attributes;
 namespace Benchmarks
 {
     [MemoryDiagnoser]
-    public class SearchingAlgorithms
+    public class Searching
     {
         private JumpSearching _jumpSearching = new JumpSearching();
         private BinarySearching _binarySearching = new BinarySearching();

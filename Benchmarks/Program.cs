@@ -1,5 +1,7 @@
 ﻿using BenchmarkDotNet.Running;
-using System.Reflection;
+using Benchmarks;
 
 
-BenchmarkRunner.Run(Assembly.GetExecutingAssembly());
+//BenchmarkRunner.Run(Assembly.GetExecutingAssembly());
+//BenchmarkRunner.Run(typeof(Searching));
+BenchmarkRunner.Run(typeof(Shuffling));
