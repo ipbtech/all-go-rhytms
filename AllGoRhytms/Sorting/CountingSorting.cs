@@ -26,9 +26,9 @@
             {
                 int value = array[i];
                 if (flag)
-                    countsBuffer[value + Math.Abs(min)] = countsBuffer[value + Math.Abs(min)] + 1;
+                    countsBuffer[value + Math.Abs(min)] += 1;
                 else
-                    countsBuffer[value - Math.Abs(min)] = countsBuffer[value - Math.Abs(min)] + 1;
+                    countsBuffer[value - Math.Abs(min)] += 1;
             }
 
             int[] actual = new int[array.Length];
@@ -71,9 +71,9 @@
             {
                 int value = array[i];
                 if (flag)
-                    countsBuffer[value + Math.Abs(min)] = countsBuffer[value + Math.Abs(min)] + 1;
+                    countsBuffer[value + Math.Abs(min)] += 1;
                 else
-                    countsBuffer[value - Math.Abs(min)] = countsBuffer[value - Math.Abs(min)] + 1;
+                    countsBuffer[value - Math.Abs(min)] += 1;
             }
 
             int[] actual = new int[array.Length];

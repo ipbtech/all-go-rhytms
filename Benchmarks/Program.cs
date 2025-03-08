@@ -4,4 +4,5 @@ using Benchmarks;
 
 //BenchmarkRunner.Run(Assembly.GetExecutingAssembly());
 //BenchmarkRunner.Run(typeof(Searching));
-BenchmarkRunner.Run(typeof(Shuffling));
+BenchmarkRunner.Run(typeof(Sorting));
+//BenchmarkRunner.Run(typeof(Shuffling));
