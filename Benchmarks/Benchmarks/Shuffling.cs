@@ -5,7 +5,7 @@ namespace Benchmarks
     [MemoryDiagnoser]
     public class Shuffling
     {
-        private AllGoRhytms.Shuffling _shuffling = new AllGoRhytms.Shuffling();
+        private readonly AllGoRhytms.Shuffling _shuffling = new();
 
         [Benchmark]
         public void ShuffleByInboxImplementation() => _shuffling.ShuffleByInboxImplementation();

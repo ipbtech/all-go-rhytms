@@ -3,8 +3,8 @@
     public class RadixSorting
     {
         [Theory]
-        [InlineData(new int[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
-        public void RadixSortEscending(params int[] array)
+        [InlineData(new[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
+        public void RadixSortAscending(params int[] array)
         {
             //Arrange
             int[] expected = array.OrderBy(x => x).ToArray();
@@ -23,7 +23,7 @@
 
             //Act
             int[] negatives = array.Where(x => x < 0).Select(x => Math.Abs(x)).ToArray();
-            int[] negativesSorted = Sort(negatives, maxNumLenght);
+            _ = Sort(negatives, maxNumLenght);
 
             int[] positives = array.Where(x => x >= 0).ToArray();
             int[] positivesSorted = Sort(positives, maxNumLenght);
@@ -37,7 +37,7 @@
 
 
         [Theory]
-        [InlineData(new int[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
+        [InlineData(new [] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
         public void RadixSortDescending(params int[] array)
         {
             //Arrange
@@ -57,7 +57,7 @@
 
             //Act
             int[] negatives = array.Where(x => x < 0).Select(x => Math.Abs(x)).ToArray();
-            int[] negativesSorted = Sort(negatives, maxNumLenght, false);
+            _ = Sort(negatives, maxNumLenght, false);
             var negativesReversed = negatives.Reverse().Select(x => 0 - x);
 
             int[] positives = array.Where(x => x >= 0).ToArray();

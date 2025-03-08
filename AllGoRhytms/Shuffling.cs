@@ -15,9 +15,7 @@
             {
                 int randInd = rand.Next(i);
 
-                int buffer = array[randInd];
-                array[randInd] = array[i];
-                array[i] = buffer;
+                (array[randInd], array[i]) = (array[i], array[randInd]);
             }
 
             // Assert
@@ -34,7 +32,7 @@
             var rand = new Random();
 
             // Act
-            array = array.OrderBy(x => rand.Next()).ToArray();
+            array = array.OrderBy(_ => rand.Next()).ToArray();
 
             // Assert
             Assert.NotEqual(array, orderedBuffer);
@@ -49,7 +47,7 @@
             var orderedBuffer = (int[])array.Clone();
 
             // Act
-            array = array.OrderBy(x => Guid.NewGuid()).ToArray();
+            array = array.OrderBy(_ => Guid.NewGuid()).ToArray();
 
             // Assert
             Assert.NotEqual(array, orderedBuffer);

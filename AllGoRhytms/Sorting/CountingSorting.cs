@@ -3,8 +3,8 @@
     public class CountingSorting
     {
         [Theory]
-        [InlineData(new int[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
-        public void CountingSortEscending(params int[] array)
+        [InlineData(new[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
+        public void CountingSortAscending(params int[] array)
         {
             //Arrange
             int[] expected = array.OrderBy(x => x).ToArray();
@@ -48,7 +48,7 @@
 
 
         [Theory]
-        [InlineData(new int[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
+        [InlineData(new[] { 16, 5, 20, 10, 36, 88, 91, -200, 8000, 0, -3, -100, 80, 55, 16, 31, -3, 88 })]
         public void CountingSortDescending(params int[] array)
         {
             //Arrange
