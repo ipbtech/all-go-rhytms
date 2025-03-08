@@ -1,5 +1,5 @@
 # all-go-rhytms
-Analysis of the popular algorithms with tests (xUnit) and benchmarks (BenchmarkDotNet) for fun.
+Analysis of the popular algorithms, test them by xUnit and provide benchmarks by BenchmarkDotNet
 ## Impements algorithms:
 ### Searching
   - Linear
